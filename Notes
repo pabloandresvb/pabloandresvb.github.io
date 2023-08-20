@@ -1,0 +1,4 @@
+Notes
+
+ sudo apt-key add /usr/share/keyrings/mongodb-server-7.0.gpg -- Required to add the public gpg key to the system database
+ sudo npm install -g mongodb -- To install the npm mongodb package globally
