@@ -1,0 +1,208 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"me",
+				"meta"
+			],
+			[
+				"re",
+				"required"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: pack",
+				"Snippet: package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 200.0,
+		"history":
+		[
+			"cls",
+			"clear"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/G/My Drive/Workspace/source/projects"
+	],
+	"file_history":
+	[
+		"/G/My Drive/Workspace/source/javascript/project3/index.html",
+		"/G/My Drive/Workspace/source/javascript/Notes",
+		"/G/My Drive/Workspace/source/javascript/project2/index.html",
+		"/G/My Drive/Workspace/source/javascript/project2/data.json",
+		"/G/My Drive/Workspace/source/javascript/project2/core.js",
+		"/G/My Drive/Workspace/source/javascript/project3/test.txt",
+		"/G/My Drive/Workspace/source/project1/index.html",
+		"/G/My Drive/Workspace/source/project1/core.js",
+		"/G/My Drive/Workspace/source/pabloandresvb.github.io/index.html",
+		"/G/My Drive/Workspace/source/pabloandresvb.github.io/core.js",
+		"/C/Users/zero/Workspace/coding/fetch_api_test.js",
+		"/G/My Drive/Workspace/source/project1/project1.sublime-project",
+		"/G/My Drive/Workspace/source/freecodecamp/html/learned_tags.html",
+		"/G/My Drive/Workspace/source/freecodecamp/html/code1.html",
+		"/G/My Drive/Workspace/source/freecodecamp/html/styles.css",
+		"/G/My Drive/Workspace/source/freecodecamp/html/code2.html",
+		"/G/My Drive/Workspace/source/freecodecamp/html/css1.css",
+		"/G/My Drive/Workspace/source/scripts/main_sil_ps",
+		"/G/My Drive/Workspace/source/scripts/main_jmwe_serverdc",
+		"/G/My Drive/Workspace/source/scripts/main_jmwe_cloud"
+	],
+	"find":
+	{
+		"height": 27.2
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.2
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "projects.sublime-project",
+	"replace":
+	{
+		"height": 51.2
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 265.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

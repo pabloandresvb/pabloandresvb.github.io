@@ -1,6 +1,65 @@
-Notes
+// NETWORKING
 
- sudo apt-key add /usr/share/keyrings/mongodb-server-7.0.gpg -- Required to add the public gpg key to the system database
- sudo npm install -g mongodb -- To install the npm mongodb package globally
+ip add
+ip route
+bridge link
 
-Testing GIT...!!! Testing...
+PRE-INSTALL
+
+sudo apt-get install nano && sudo apt-get install git
+
+// APACHE WEBSERVER INSTALLATION
+
+# Packages installation
+sudo apt-get update
+sudo apt-get install apache2 # default web root should be /var/www/ on debian-based distros
+
+# Apache service/daemon start
+sudo systemctl status apache2
+sudo systemctl start apache2
+sudo systemctl enable apache2 # To enable Apache so it can start the daemon when booting
+
+sudo apache2ctl configtest # Reviews the Apache config files and looks for syntax errors
+sudo systemctl reload apache2 # Reload Apache config files
+
+service apache2 restart
+service --status-all # (If you want to list all available services)
+
+hostname -I # Check's for your local network's interface IP address
+curl -4 icanhazip.com # To know your server's public IP address
+
+// SSH SERVER PREPARATION
+
+sudo apt-get install openssh-server
+
+// GIT USER ACCOUNT PREPARATION
+
+// GIT REPOSITORY AND SERVER SETUP
+
+// MONGO DB SETUP
+
+sudo apt-key add /usr/share/keyrings/mongodb-server-7.0.gpg -- Required to add the public gpg key to the system database
+sudo npm install -g mongodb -- To install the npm mongodb package globally
+
+
+
+
+// DOCKER
+
+docker run -it --rm busybox
+
+docker run -itd --rm --name example_container image_tag_name (e.g. busybox)
+
+docker run -itd --rm -p 80:80 --name example_container image_tag_name // Expose port 80 on host and container
+
+docker run -itd --rm -p 80:80 --network network_name --name example_container image_tag_name // Add container to network
+
+docker inspect example_container
+docker inspect network_name
+
+docker exec -it container_name sh # Opens a pseudo-TTY terminal - sh shell
+
+docker network create network_name
+
+docker ps
+docker network ls
