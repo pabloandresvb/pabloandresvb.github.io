@@ -4,7 +4,7 @@ ip add
 ip route
 bridge link
 
-PRE-INSTALL
+// PRE-INSTALL
 
 sudo apt-get install nano && sudo apt-get install git
 
@@ -29,6 +29,7 @@ hostname -I # Check's for your local network's interface IP address
 curl -4 icanhazip.com # To know your server's public IP address
 
 // GIT USER ACCOUNT PREPARATION
+
 sudo adduser --disabled-password git
 
 // SSH SERVER PREPARATION
@@ -37,8 +38,11 @@ sudo apt-get install openssh-server
 
 sudo nano /etc/ssh/sshd_config # Append "AllowGroups ubuntu git" - OPTIONAL: by default all groups are allowed to try SSHing
 
-sudo mkdir /home/git/.ssh && sudo chmod 700 /home/git/.ssh && sudo touch /home/git/.ssh/authorized_keys && sudo chmod 600 /home/git/.ssh/authorized_keys # After this you need to generate the SSH RSA keys private/public for the user you would like to use the Git repo
-sudo cat "id_rsa_pub" >> /home/git/.ssh/authorized_keys # Or you can copy paste it from Windows to the Linux box
+sudo mkdir /home/git/.ssh && sudo chmod 700 /home/git/.ssh && sudo touch /home/git/.ssh/authorized_keys && sudo chmod 600 /home/git/.ssh/authorized_keys # After this you need to generate the SSH RSA keys private/public for the user you would like to access the repo
+
+ssh-keygen # On the CLIENT who will access the repo, this will generate the private and public (.pub) keys - the keys will be stored by default on the .ssh/ folder on the user home dir
+
+sudo cat "id_rsa.pub" >> /home/git/.ssh/authorized_keys # Or you can copy paste it from Windows to the Linux box
 
 sudo sshd -T | grep Allow # To check the sshd daemon config and look for specific parameters
 
@@ -55,7 +59,7 @@ chmod 755 /home/git/projects.git/hooks/post-receive # File should be executable 
 
 // GIT REPOSITORY AND CLIENT SETUP
 
-git clone git@gitserver:/path_to_git_repo.git_on_gitserver/
+git clone git@gitserver:/path_to_git_repo.git_on_gitserver/ # Client user must be authorized over SSH (SSH RSA key included on the server)
 
 git commit -am 'New commit' # These commands will push the committed changes to the repo
 git push origin master
@@ -64,8 +68,6 @@ git push origin master
 
 sudo apt-key add /usr/share/keyrings/mongodb-server-7.0.gpg -- Required to add the public gpg key to the system database
 sudo npm install -g mongodb -- To install the npm mongodb package globally
-
-
 
 
 // DOCKER
