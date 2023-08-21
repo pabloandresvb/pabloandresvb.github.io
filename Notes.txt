@@ -64,6 +64,12 @@ git clone git@gitserver:/path_to_git_repo.git_on_gitserver/ # Client user must b
 git commit -am 'New commit' # These commands will push the committed changes to the repo
 git push origin master
 
+git push
+git push <local_or_remote_repo> <branch>
+
+git remote -v # List remotes
+git remote add github https://github.com/pabloandresvb/pabloandresvb.github.io # Add remote / "GitHub" repo
+
 // MONGO DB SETUP
 
 sudo apt-key add /usr/share/keyrings/mongodb-server-7.0.gpg -- Required to add the public gpg key to the system database
